@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Montserrat;
+}
+
+i {
+  font-size: 24px;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.dashboard.reversed {
+  --input-accent-color: #cfcdb5;
+  --alt-input-text-color: #393f32;
+  --card-svg-fill: #cfcdb5;
+  --ui-svg-fill: #cfcdb5;
+  --card-background: #252820;
+  background: #252820;
+}
+
+.sidenav {
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 10vw;
+  text-align: center;
+}
+
+.stocks {
+  text-align: center;
+  display: table;
+  position: absolute;
+  height: 99%;
+  width: 95%;
+  padding-left: 10vw;
+}
+
+.stock-entries {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mail,
+.bot,
+.lem,
+.fin,
+.bank,
+.fans {
+  width: 28%;
+  float: left;
+  padding: 20px;
+  margin-left: -20px;
+}

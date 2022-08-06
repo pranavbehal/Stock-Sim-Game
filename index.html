@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7b0f297600.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="sidenav">
+      <div class="objective">
+        <h2>First to $75,000 Wins!</h2>
+      </div>
+      <div class="my-stats">
+        <h2>My Stats</h2>
+        <h3 id="money">Money: $50000</h3>
+        <h3 id="net-worth">Net Worth: $50000</h3>
+      </div>
+    </br>
+      <div class="ai-stats">
+        <h2>Computer's Stats</h2>
+        <h3 id="ai-net-worth">Net Worth: $50000</h3>
+      </div>
+    </div>
+    <div class="stocks">
+      <div class="stock-entries">
+        <div class="mail">
+          <i class="fa-solid fa-envelope"></i>
+          <h2 class="stock-name" id="mail-stock-name"></h2>
+          <h3 class="stock-symbol" id="mail-stock-symbol"></h3>
+          <h3 class="stock-price" id="mail-stock-price">Price: $100</h3>
+          <h3 class="stock-change" id="mail-stock-change">Price Change:</h3>
+          <h3 class="stock-shares" id="mail-stock-shares">Shares: 0</h3>
+          <div class="trade">
+            <h3>Buy:</h3>
+            <button
+              class="buy-button"
+              id="buy-mail-5"
+              onclick="transaction(MAIL, 5, 'buy', 'mail')"
+            >
+              5
+            </button>
+            <button
+              class="buy-button"
+              id="buy-mail-10"
+              onclick="transaction(MAIL, 10, 'buy', 'mail')"
+            >
+              10
+            </button>
+            <button
+              class="buy-button"
+              id="buy-mail-25"
+              onclick="transaction(MAIL, 25, 'buy', 'mail')"
+            >
+              25
+            </button>
+            <button
+              class="buy-button"
+              id="buy-mail-max"
+              onclick="transaction(MAIL, 'MAX', 'buy', 'mail')"
+            >
+              MAX
+            </button>
+            <h3>Sell:</h3>
+            <button
+              class="sell-button"
+              id="sell-mail-5"
+              onclick="transaction(MAIL, 5, 'sell', 'mail')"
+            >
+              5
+            </button>
+            <button
+              class="sell-button"
+              id="sell-mail-10"
+              onclick="transaction(MAIL, 10, 'sell', 'mail')"
+            >
+              10
+            </button>
+            <button
+              class="sell-button"
+              id="sell-mail-25"
+              onclick="transaction(MAIL, 25, 'sell', 'mail')"
+            >
+              25
+            </button>
+            <button
+              class="sell-button"
+              id="sell-mail-max"
+              onclick="transaction(MAIL, 'MAX', 'sell', 'mail')"
+            >
+              MAX
+            </button>
+          </div>
+        </div>
+        <div class="bot">
+          <i class="fa-solid fa-robot"></i>
+          <h2 class="stock-name" id="bot-stock-name"></h2>
+          <h3 class="stock-symbol" id="bot-stock-symbol"></h3>
+          <h3 class="stock-price" id="bot-stock-price">Price: $250</h3>
+          <h3 class="stock-change" id="bot-stock-change">Price Change:</h3>
+          <h3 class="stock-shares" id="bot-stock-shares">Shares: 0</h3>
+          <div class="trade">
+            <h3>Buy:</h3>
+            <button
+              class="buy-button"
+              id="buy-bot-5"
+              onclick="transaction(BOT, 5, 'buy', 'bot')"
+            >
+              5
+            </button>
+            <button
+              class="buy-button"
+              id="buy-bot-10"
+              onclick="transaction(BOT, 10, 'buy', 'bot')"
+            >
+              10
+            </button>
+            <button
+              class="buy-button"
+              id="buy-bot-25"
+              onclick="transaction(BOT, 25, 'buy', 'bot')"
+            >
+              25
+            </button>
+            <button
+              class="buy-button"
+              id="buy-bot-max"
+              onclick="transaction(BOT, 'MAX', 'buy', 'bot')"
+            >
+              MAX
+            </button>
+            <h3>Sell:</h3>
+            <button
+              class="sell-button"
+              id="sell-bot-5"
+              onclick="transaction(BOT, 5, 'sell', 'bot')"
+            >
+              5
+            </button>
+            <button
+              class="sell-button"
+              id="sell-bot-10"
+              onclick="transaction(BOT, 10, 'sell', 'bot')"
+            >
+              10
+            </button>
+            <button
+              class="sell-button"
+              id="sell-bot-25"
+              onclick="transaction(BOT, 25, 'sell', 'bot')"
+            >
+              25
+            </button>
+            <button
+              class="sell-button"
+              id="sell-bot-max"
+              onclick="transaction(BOT, 'MAX', 'sell', 'bot')"
+            >
+              MAX
+            </button>
+          </div>
+        </div>
+        <div class="lem">
+          <i class="fa-solid fa-lemon"></i>
+          <h2 class="stock-name" id="lem-stock-name"></h2>
+          <h3 class="stock-symbol" id="lem-stock-symbol"></h3>
+          <h3 class="stock-price" id="lem-stock-price">Price: $100</h3>
+          <h3 class="stock-change" id="lem-stock-change">Price Change:</h3>
+          <h3 class="stock-shares" id="lem-stock-shares">Shares: 0</h3>
+          <div class="trade">
+            <h3>Buy:</h3>
+            <button
+              class="buy-button"
+              id="buy-lem-5"
+              onclick="transaction(LEM, 5, 'buy', 'lem')"
+            >
+              5
+            </button>
+            <button
+              class="buy-button"
+              id="buy-lem-10"
+              onclick="transaction(LEM, 10, 'buy', 'lem')"
+            >
+              10
+            </button>
+            <button
+              class="buy-button"
+              id="buy-lem-25"
+              onclick="transaction(LEM, 25, 'buy', 'lem')"
+            >
+              25
+            </button>
+            <button
+              class="buy-button"
+              id="buy-lem-max"
+              onclick="transaction(LEM, 'MAX', 'buy', 'lem')"
+            >
+              MAX
+            </button>
+            <h3>Sell:</h3>
+            <button
+              class="sell-button"
+              id="sell-lem-5"
+              onclick="transaction(LEM, 5, 'sell', 'lem')"
+            >
+              5
+            </button>
+            <button
+              class="sell-button"
+              id="sell-lem-10"
+              onclick="transaction(LEM, 10, 'sell', 'lem')"
+            >
+              10
+            </button>
+            <button
+              class="sell-button"
+              id="sell-lem-25"
+              onclick="transaction(LEM, 25, 'sell', 'lem')"
+            >
+              25
+            </button>
+            <button
+              class="sell-button"
+              id="sell-lem-max"
+              onclick="transaction(LEM, 'MAX', 'sell', 'lem')"
+            >
+              MAX
+            </button>
+          </div>
+        </div>
+        <div class="fin">
+          <i class="fa-solid fa-money-bill"></i>
+          <h2 class="stock-name" id="fin-stock-name"></h2>
+          <h3 class="stock-symbol" id="fin-stock-symbol"></h3>
+          <h3 class="stock-price" id="fin-stock-price">Price: $100</h3>
+          <h3 class="stock-change" id="fin-stock-change">Price Change:</h3>
+          <h3 class="stock-shares" id="fin-stock-shares">Shares: 0</h3>
+          <div class="trade">
+            <h3>Buy:</h3>
+            <button
+              class="buy-button"
+              id="buy-fin-5"
+              onclick="transaction(FIN, 5, 'buy', 'fin')"
+            >
+              5
+            </button>
+            <button
+              class="buy-button"
+              id="buy-fin-10"
+              onclick="transaction(FIN, 10, 'buy', 'fin')"
+            >
+              10
+            </button>
+            <button
+              class="buy-button"
+              id="buy-fin-25"
+              onclick="transaction(FIN, 25, 'buy', 'fin')"
+            >
+              25
+            </button>
+            <button
+              class="buy-button"
+              id="buy-fin-max"
+              onclick="transaction(FIN, 'MAX', 'buy', 'fin')"
+            >
+              MAX
+            </button>
+            <h3>Sell:</h3>
+            <button
+              class="sell-button"
+              id="sell-fin-5"
+              onclick="transaction(FIN, 5, 'sell', 'fin')"
+            >
+              5
+            </button>
+            <button
+              class="sell-button"
+              id="sell-fin-10"
+              onclick="transaction(FIN, 10, 'sell', 'fin')"
+            >
+              10
+            </button>
+            <button
+              class="sell-button"
+              id="sell-fin-25"
+              onclick="transaction(FIN, 25, 'sell', 'fin')"
+            >
+              25
+            </button>
+            <button
+              class="sell-button"
+              id="sell-fin-max"
+              onclick="transaction(FIN, 'MAX', 'sell', 'fin')"
+            >
+              MAX
+            </button>
+          </div>
+        </div>
+        <div class="bank">
+          <i class="fa-solid fa-building-columns"></i>
+          <h2 class="stock-name" id="bank-stock-name"></h2>
+          <h3 class="stock-symbol" id="bank-stock-symbol"></h3>
+          <h3 class="stock-price" id="bank-stock-price">Price: $150</h3>
+          <h3 class="stock-change" id="bank-stock-change">Price Change:</h3>
+          <h3 class="stock-shares" id="bank-stock-shares">Shares: 0</h3>
+          <div class="trade">
+            <h3>Buy:</h3>
+            <button
+              class="buy-button"
+              id="buy-bank-5"
+              onclick="transaction(BANK, 5, 'buy', 'bank')"
+            >
+              5
+            </button>
+            <button
+              class="buy-button"
+              id="buy-bank-10"
+              onclick="transaction(BANK, 10, 'buy', 'bank')"
+            >
+              10
+            </button>
+            <button
+              class="buy-button"
+              id="buy-bank-25"
+              onclick="transaction(BANK, 25, 'buy', 'bank')"
+            >
+              25
+            </button>
+            <button
+              class="buy-button"
+              id="buy-bank-max"
+              onclick="transaction(BANK, 'MAX', 'buy', 'bank')"
+            >
+              MAX
+            </button>
+            <h3>Sell:</h3>
+            <button
+              class="sell-button"
+              id="sell-bank-5"
+              onclick="transaction(BANK, 5, 'sell', 'bank')"
+            >
+              5
+            </button>
+            <button
+              class="sell-button"
+              id="sell-bank-10"
+              onclick="transaction(BANK, 10, 'sell', 'bank')"
+            >
+              10
+            </button>
+            <button
+              class="sell-button"
+              id="sell-bank-25"
+              onclick="transaction(BANK, 25, 'sell', 'bank')"
+            >
+              25
+            </button>
+            <button
+              class="sell-button"
+              id="sell-bank-max"
+              onclick="transaction(BANK, 'MAX', 'sell', 'bank')"
+            >
+              MAX
+            </button>
+          </div>
+        </div>
+        <div class="fans">
+          <i class="fa-solid fa-fan"></i>
+          <h2 class="stock-name" id="fans-stock-name"></h2>
+          <h3 class="stock-symbol" id="fans-stock-symbol"></h3>
+          <h3 class="stock-price" id="fans-stock-price">Price: $150</h3>
+          <h3 class="stock-change" id="fans-stock-change">Price Change:</h3>
+          <h3 class="stock-shares" id="fans-stock-shares">Shares: 0</h3>
+          <div class="trade">
+            <h3>Buy:</h3>
+            <button
+              class="buy-button"
+              id="buy-fans-5"
+              onclick="transaction(FANS, 5, 'buy', 'fans')"
+            >
+              5
+            </button>
+            <button
+              class="buy-button"
+              id="buy-fans-10"
+              onclick="transaction(FANS, 10, 'buy', 'fans')"
+            >
+              10
+            </button>
+            <button
+              class="buy-button"
+              id="buy-fans-25"
+              onclick="transaction(FANS, 25, 'buy', 'fans')"
+            >
+              25
+            </button>
+            <button
+              class="buy-button"
+              id="buy-fans-max"
+              onclick="transaction(FANS, 'MAX', 'buy', 'fans')"
+            >
+              MAX
+            </button>
+            <h3>Sell:</h3>
+            <button
+              class="sell-button"
+              id="sell-fans-5"
+              onclick="transaction(FANS, 5, 'sell', 'fans')"
+            >
+              5
+            </button>
+            <button
+              class="sell-button"
+              id="sell-fans-10"
+              onclick="transaction(FANS, 10, 'sell', 'fans')"
+            >
+              10
+            </button>
+            <button
+              class="sell-button"
+              id="sell-fans-25"
+              onclick="transaction(FANS, 25, 'sell', 'fans')"
+            >
+              25
+            </button>
+            <button
+              class="sell-button"
+              id="sell-fans-max"
+              onclick="transaction(FANS, 'MAX', 'sell', 'fans')"
+            >
+              MAX
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="you-win">
+      <h1>You Win!</h1>
+      <h2>Congratulations! You have won the game!</h2>
+      <h3>Thank you for playing! If you want to play once again, reload the page!</h3>
+    </div>
+  </body>
+</html>
