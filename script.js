@@ -1,8 +1,7 @@
-let money = 50000;
-let portfolioValue = 50000;
+let money = 25000;
+let portfolioValue = 25000;
 
-let AImoney = 50000;
-let AIportfolioValue = 50000;
+let AIportfolioValue = 25000;
 
 let MAIL = {
   name: "National Mail Delivery",
@@ -212,7 +211,7 @@ let transaction = function (symbol, amount, type, symbol2) {
       ).innerHTML = `Shares: ${symbol.shares}`;
       document.getElementById("money").innerHTML = `Money: $` + money;
     } else {
-      console.log(`You don't have enough money for this transaction!`);
+      window.alert(`You don't have enough money for this transaction!`);
     }
   } else if (type === "sell") {
     // First check if the user has enough of the stock to sell all of them
@@ -224,7 +223,7 @@ let transaction = function (symbol, amount, type, symbol2) {
       ).innerHTML = `Shares:          ${symbol.shares}`;
       document.getElementById("money").innerHTML = `Money: $` + money;
     } else {
-      console.log(`You can't sell shares you don't own!`);
+      window.alert(`You can't sell shares you don't own!`);
     }
   }
 };
@@ -247,7 +246,8 @@ let portfolioValueUpdate = function () {
 // AI Portfolio
 let AIValueUpdate = function () {
   setInterval(function () {
-    AIportfolioValue = AImoney + Math.floor(Math.random() * 2000) - 200;
+    AIportfolioValue =
+      AIportfolioValue + Math.floor(Math.random() * 20000) - 100;
     if (AIportfolioValue <= 5000) {
       AIportfolioValue = AIportfolioValue + 5500;
     }
@@ -256,22 +256,26 @@ let AIValueUpdate = function () {
   }, 5000);
 };
 
-let timer = document.getElementById("timer");
-let timerMinute = 3;
-let timerSecond = 00;
-let timerChange = function () {
-  setInterval(function () {
-    timer.innerHTML = "3:00";
-    console.log(test);
+let tempNum = 1;
 
-    if (timerSecond <= 0) {
-      timerMinute--;
-      timerSecond = 59;
-    } else timerSecond--;
-  }, 1000);
+let checkWinner = function () {
+  setInterval(function () {
+    if (portfolioValue > 250000 && portfolioValue > AIportfolioValue) {
+      document.getElementById("sidenav").style.display = "none";
+      document.getElementById("stocks").style.display = "none";
+      document.getElementById("you-win").style.display = "block";
+    } else if (AIportfolioValue > 250000 && AIportfolioValue > portfolioValue) {
+      document.getElementById("sidenav").style.display = "none";
+      document.getElementById("stocks").style.display = "none";
+      document.getElementById("you-lose").style.display = "block";
+    } else if (portfolioValue < 250000 && AIportfolioValue < 250000) {
+      tempNum++;
+    }
+    console.log(portfolioValue, AIportfolioValue);
+  }, 5000);
 };
 
 updatePrices();
 portfolioValueUpdate();
 AIValueUpdate();
-timerChange();
+checkWinner();

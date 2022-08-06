@@ -36,6 +36,7 @@ body {
   transform: translate(0, -50%);
   width: 10vw;
   text-align: center;
+  display: show;
 }
 
 .stocks {
@@ -62,4 +63,14 @@ body {
   float: left;
   padding: 20px;
   margin-left: -20px;
+}
+
+#you-win,
+#you-lose {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  display: none;
 }

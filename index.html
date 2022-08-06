@@ -5,30 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/7b0f297600.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
+
     <title>Document</title>
   </head>
   <body>
-    <div class="sidenav">
+    <div class="sidenav" id="sidenav">
       <div class="objective">
-        <h2>First to $75,000 Wins!</h2>
+        <h2>First to $250,000 Wins!</h2>
       </div>
       <div class="my-stats">
         <h2>My Stats</h2>
-        <h3 id="money">Money: $50000</h3>
-        <h3 id="net-worth">Net Worth: $50000</h3>
+        <h3 id="money">Money: $25,000</h3>
+        <h3 id="net-worth">Net Worth: $25,000</h3>
       </div>
     </br>
       <div class="ai-stats">
         <h2>Computer's Stats</h2>
-        <h3 id="ai-net-worth">Net Worth: $50000</h3>
+        <h3 id="ai-net-worth">Net Worth: $25,000</h3>
       </div>
     </div>
-    <div class="stocks">
+    <div class="stocks" id="stocks">
       <div class="stock-entries">
         <div class="mail">
           <i class="fa-solid fa-envelope"></i>
@@ -440,10 +436,18 @@
         </div>
       </div>
     </div>
-    <div class="you-win">
-      <h1>You Win!</h1>
+    <div id="you-win">
       <h2>Congratulations! You have won the game!</h2>
       <h3>Thank you for playing! If you want to play once again, reload the page!</h3>
     </div>
-  </body>
+    <div id="you-lose">
+      <h2>Oh no! You lost the game!</h2>
+      <h3>Your opponent made $250,000 before you! Reload the page to replay!</h3>
+    </div>
+  </body>    
+  <script
+      src="https://kit.fontawesome.com/7b0f297600.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
 </html>
