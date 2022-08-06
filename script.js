@@ -247,7 +247,7 @@ let portfolioValueUpdate = function () {
 let AIValueUpdate = function () {
   setInterval(function () {
     AIportfolioValue =
-      AIportfolioValue + Math.floor(Math.random() * 20000) - 100;
+      AIportfolioValue + Math.floor(Math.random() * 17500) - 150;
     if (AIportfolioValue <= 5000) {
       AIportfolioValue = AIportfolioValue + 5500;
     }
@@ -279,3 +279,75 @@ updatePrices();
 portfolioValueUpdate();
 AIValueUpdate();
 checkWinner();
+
+let mailModal = document.getElementById("mail-modal");
+let mailBtn = document.getElementById("mail-question");
+let span = document.getElementsByClassName("close")[0];
+
+mailBtn.onclick = function () {
+  mailModal.style.display = "block";
+};
+
+span.onclick = function () {
+  mailModal.style.display = "none";
+};
+
+let botModal = document.getElementById("bot-modal");
+let botBtn = document.getElementById("bot-question");
+let span1 = document.getElementsByClassName("close")[1];
+
+botBtn.onclick = function () {
+  botModal.style.display = "block";
+};
+
+span1.onclick = function () {
+  botModal.style.display = "none";
+};
+
+let lemModal = document.getElementById("lem-modal");
+let lemBtn = document.getElementById("lem-question");
+let span2 = document.getElementsByClassName("close")[2];
+
+lemBtn.onclick = function () {
+  lemModal.style.display = "block";
+};
+
+span2.onclick = function () {
+  lemModal.style.display = "none";
+};
+
+let finModal = document.getElementById("fin-modal");
+let finBtn = document.getElementById("fin-question");
+let span3 = document.getElementsByClassName("close")[3];
+
+finBtn.onclick = function () {
+  finModal.style.display = "block";
+};
+
+span3.onclick = function () {
+  finModal.style.display = "none";
+};
+
+let bankModal = document.getElementById("bank-modal");
+let bankBtn = document.getElementById("bank-question");
+let span4 = document.getElementsByClassName("close")[4];
+
+bankBtn.onclick = function () {
+  bankModal.style.display = "block";
+};
+
+span4.onclick = function () {
+  bankModal.style.display = "none";
+};
+
+let fansModal = document.getElementById("fans-modal");
+let fansBtn = document.getElementById("fans-question");
+let span5 = document.getElementsByClassName("close")[5];
+
+fansBtn.onclick = function () {
+  fansModal.style.display = "block";
+};
+
+span5.onclick = function () {
+  fansModal.style.display = "none";
+};

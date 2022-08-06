@@ -11,24 +11,69 @@
   <body>
     <div class="sidenav" id="sidenav">
       <div class="objective">
-        <h2>First to $250,000 Wins!</h2>
+
+        <h2 class="light-green">First to Make $250,000 Wins!</h2>        
+        <h3 class="add-margin-below">Buy and sell stocks to make money and win!</h3>
       </div>
       <div class="my-stats">
-        <h2>My Stats</h2>
+        <h2 class="light-green">My Stats</h2>
         <h3 id="money">Money: $25,000</h3>
         <h3 id="net-worth">Net Worth: $25,000</h3>
       </div>
     </br>
       <div class="ai-stats">
-        <h2>Computer's Stats</h2>
+        <h2 class="light-green">Computer's Stats</h2>
         <h3 id="ai-net-worth">Net Worth: $25,000</h3>
+      </div>
+    </div>
+    <div class="modals">
+      <div id="mail-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Info on National Mail Delivery</h3>
+          <p>National Mail Delivery is a conservative stock. This means that it doesn't have much risk, and trends to be a very safe pick. This stock is also known for its long history of amazing profits for such a safe pick.</p>
+        </div>
+      </div>
+        <div id="bot-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Info on AI Robots</h3>
+            <p>AI Robots is a high-risk-high-reward stock. It can be very volatile, and isn't a great pick for the short-term. It could have a very profitably future, though.</p>
+          </div>
+      </div>
+      <div id="lem-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Info on Lemon</h3>
+          <p>Lemon is a blue-chip stock. It has proven its dominance in the past, and is a household name. However, it may not offer the gains it once did, as it doesn't have anything new up its sleeve.</p>
+        </div>
+        </div>
+        <div id="fin-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Info on Next-Gen Money</h3>
+            <p>Next-Gen Money is a high-risk-high-reward stock that is trying to change how money works. Investors are excited to see this company's future plans, although the stock doesn't promise any stable returns for now.</p>
+          </div>
+      </div>
+      <div id="bank-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Info on Trustworthy Bank</h3>
+          <p>Trustworthy Bank is a conservative stock. Investors have been pouring money into this company for centuries now, and this company has stood the test of time. A great pick for those wanting stable returns.</p>
+        </div>
+    </div>
+    <div id="fans-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Info on Fans Inc</h3>
+        <p>Fans Inc is a blue-chip stock. It's the industry's favorite manufacturer, but has been pretty low with its returns for the pasts few months. They haven't made any major anouncements for the past year, so investors aren't very excited.</p>
       </div>
     </div>
     <div class="stocks" id="stocks">
       <div class="stock-entries">
         <div class="mail">
           <i class="fa-solid fa-envelope"></i>
-          <h2 class="stock-name" id="mail-stock-name"></h2>
+          <h2 class="stock-name" id="mail-stock-name"></h2><i class="fa-regular fa-circle-question question-icon" id="mail-question"></i>
           <h3 class="stock-symbol" id="mail-stock-symbol"></h3>
           <h3 class="stock-price" id="mail-stock-price">Price: $100</h3>
           <h3 class="stock-change" id="mail-stock-change">Price Change:</h3>
@@ -96,7 +141,7 @@
         </div>
         <div class="bot">
           <i class="fa-solid fa-robot"></i>
-          <h2 class="stock-name" id="bot-stock-name"></h2>
+          <h2 class="stock-name" id="bot-stock-name"></h2><i class="fa-regular fa-circle-question question-icon" id="bot-question"></i>
           <h3 class="stock-symbol" id="bot-stock-symbol"></h3>
           <h3 class="stock-price" id="bot-stock-price">Price: $250</h3>
           <h3 class="stock-change" id="bot-stock-change">Price Change:</h3>
@@ -164,7 +209,7 @@
         </div>
         <div class="lem">
           <i class="fa-solid fa-lemon"></i>
-          <h2 class="stock-name" id="lem-stock-name"></h2>
+          <h2 class="stock-name" id="lem-stock-name"></h2><i class="fa-regular fa-circle-question question-icon" id="lem-question"></i>
           <h3 class="stock-symbol" id="lem-stock-symbol"></h3>
           <h3 class="stock-price" id="lem-stock-price">Price: $100</h3>
           <h3 class="stock-change" id="lem-stock-change">Price Change:</h3>
@@ -232,7 +277,7 @@
         </div>
         <div class="fin">
           <i class="fa-solid fa-money-bill"></i>
-          <h2 class="stock-name" id="fin-stock-name"></h2>
+          <h2 class="stock-name" id="fin-stock-name"></h2><i class="fa-regular fa-circle-question question-icon" id="fin-question"></i>
           <h3 class="stock-symbol" id="fin-stock-symbol"></h3>
           <h3 class="stock-price" id="fin-stock-price">Price: $100</h3>
           <h3 class="stock-change" id="fin-stock-change">Price Change:</h3>
@@ -300,7 +345,7 @@
         </div>
         <div class="bank">
           <i class="fa-solid fa-building-columns"></i>
-          <h2 class="stock-name" id="bank-stock-name"></h2>
+          <h2 class="stock-name" id="bank-stock-name"></h2><i class="fa-regular fa-circle-question question-icon" id="bank-question"></i>
           <h3 class="stock-symbol" id="bank-stock-symbol"></h3>
           <h3 class="stock-price" id="bank-stock-price">Price: $150</h3>
           <h3 class="stock-change" id="bank-stock-change">Price Change:</h3>
@@ -368,7 +413,7 @@
         </div>
         <div class="fans">
           <i class="fa-solid fa-fan"></i>
-          <h2 class="stock-name" id="fans-stock-name"></h2>
+          <h2 class="stock-name" id="fans-stock-name"></h2><i class="fa-regular fa-circle-question question-icon" id="fans-question"></i>
           <h3 class="stock-symbol" id="fans-stock-symbol"></h3>
           <h3 class="stock-price" id="fans-stock-price">Price: $150</h3>
           <h3 class="stock-change" id="fans-stock-change">Price Change:</h3>
