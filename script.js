@@ -247,7 +247,7 @@ let portfolioValueUpdate = function () {
 let AIValueUpdate = function () {
   setInterval(function () {
     AIportfolioValue =
-      AIportfolioValue + Math.floor(Math.random() * 17500) - 150;
+      AIportfolioValue + Math.floor(Math.random() * 8000) - 150;
     if (AIportfolioValue <= 5000) {
       AIportfolioValue = AIportfolioValue + 5500;
     }
