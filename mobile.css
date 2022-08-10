@@ -1,0 +1,141 @@
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  i {
+    font-size: 24px;
+  }
+
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #cfcdb5;
+  }
+
+  button {
+    border: 1px solid grey;
+    border-radius: 15px;
+    background: none;
+    font-size: 20px;
+    font-family: "Montserrat";
+  }
+
+  button:hover {
+    cursor: pointer;
+  }
+
+  .sidenav {
+    position: absolute;
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 10vw;
+    text-align: center;
+    display: show;
+    margin-left: 2vw;
+  }
+
+  .add-margin-below {
+    margin-bottom: 30px;
+  }
+
+  .stocks {
+    text-align: center;
+    display: table;
+    position: absolute;
+    height: 99%;
+    width: 95%;
+    padding-left: 10vw;
+  }
+
+  .stock-entries {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .mail,
+  .bot,
+  .lem,
+  .fin,
+  .bank,
+  .fans {
+    width: 28%;
+    float: left;
+    padding: 20px;
+    margin-left: -20px;
+  }
+
+  #you-win,
+  #you-lose {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    display: none;
+  }
+
+  .stock-name {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .question-icon {
+    font-size: 16px;
+  }
+
+  .question-icon:hover {
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    display: none;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 25px;
+    width: 70%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

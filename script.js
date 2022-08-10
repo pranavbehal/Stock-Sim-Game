@@ -271,7 +271,6 @@ let checkWinner = function () {
     } else if (portfolioValue < 250000 && AIportfolioValue < 250000) {
       tempNum++;
     }
-    console.log(portfolioValue, AIportfolioValue);
   }, 5000);
 };
 
