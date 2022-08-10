@@ -31,26 +31,18 @@
 
   .sidenav {
     position: absolute;
-    position: fixed;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 10vw;
+    display: flex;
     text-align: center;
-    display: show;
-    margin-left: 2vw;
-  }
-
-  .add-margin-below {
-    margin-bottom: 30px;
+    top: 80px;
   }
 
   .stocks {
+    top: 150px;
     text-align: center;
     display: table;
     position: absolute;
     height: 99%;
     width: 95%;
-    padding-left: 10vw;
   }
 
   .stock-entries {
@@ -67,7 +59,6 @@
     width: 28%;
     float: left;
     padding: 10px;
-    margin-left: -20px;
   }
 
   #you-win,
@@ -114,7 +105,6 @@
     width: 70%;
   }
 
-  /* The Close Button */
   .close {
     color: #aaa;
     float: right;

@@ -35,6 +35,7 @@ button {
   font-size: 20px;
   font-family: "Montserrat";
 }
+
 button:hover {
   cursor: pointer;
 }
@@ -125,7 +126,6 @@ button:hover {
   width: 70%;
 }
 
-/* The Close Button */
 .close {
   color: #aaa;
   float: right;
