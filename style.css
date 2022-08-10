@@ -140,6 +140,10 @@ button:hover {
   cursor: pointer;
 }
 
+.credits-div {
+  position: relative;
+}
+
 .made-by {
   position: fixed;
   bottom: 0px;
