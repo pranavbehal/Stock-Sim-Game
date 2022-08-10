@@ -30,10 +30,19 @@
   }
 
   .sidenav {
-    position: absolute;
-    display: flex;
-    text-align: center;
     top: 80px;
+    text-align: center;
+    display: table;
+    position: absolute;
+    width: 93%;
+  }
+
+  .objective,
+  .my-stats,
+  .ai-stats {
+    display: table-cell;
+    vertical-align: middle;
+    width: 30%;
   }
 
   .stocks {
