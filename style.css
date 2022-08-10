@@ -140,21 +140,16 @@ button:hover {
   cursor: pointer;
 }
 
-.credits-div {
+/* .credits-div {
   position: relative;
-}
+} */
 
-.made-by {
+/* .made-by {
   position: fixed;
   bottom: 0px;
   width: 100%;
-}
-
-/* .made-by {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  float: right;
 } */
+
+.made-by {
+  float: right;
+}
