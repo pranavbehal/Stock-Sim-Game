@@ -1,23 +1,13 @@
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 20px;
-  }
+@media only screen and (max-width: 500px) {
   h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
   h3 {
-    font-size: 16px;
-  }
-  h4 {
-    font-size: 16px;
-  }
-
-  p {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   i {
-    font-size: 24px;
+    font-size: 14px;
   }
 
   html,
@@ -31,7 +21,7 @@
     border: 1px solid grey;
     border-radius: 15px;
     background: none;
-    font-size: 20px;
+    font-size: 14px;
     font-family: "Montserrat";
   }
 
@@ -76,7 +66,7 @@
   .fans {
     width: 28%;
     float: left;
-    padding: 20px;
+    padding: 10px;
     margin-left: -20px;
   }
 
@@ -120,7 +110,7 @@
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
-    padding: 25px;
+    padding: 20px;
     width: 70%;
   }
 
@@ -128,7 +118,7 @@
   .close {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
   }
 
@@ -137,5 +127,13 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .objective-description {
+    display: none;
+  }
+
+  .mobile-hide {
+    display: none;
   }
 }
