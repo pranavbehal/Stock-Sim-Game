@@ -152,4 +152,38 @@ button:hover {
 
 .made-by {
   float: right;
+  padding-top: 91.5vh;
+  margin-right: 15px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .made-by {
+    float: right;
+    padding-top: 91.5vh;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .made-by {
+    float: right;
+    padding-top: 125vh;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .made-by {
+    float: right;
+    padding-top: 105vh;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .made-by {
+    float: right;
+    padding-top: 105vh;
+    margin-right: 15px;
+  }
 }

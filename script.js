@@ -357,21 +357,3 @@ let span6 = document.getElementsByClassName("close")[6];
 span6.onclick = function () {
   mobileObjectiveModal.style.display = "none";
 };
-
-let body = document.body;
-let html = document.documentElement;
-
-let height = Math.max(
-  body.scrollHeight,
-  body.offsetHeight,
-  html.clientHeight,
-  html.scrollHeight,
-  html.offsetHeight
-);
-
-console.log(height);
-
-height /= 1.05;
-console.log(height);
-
-document.getElementById("made-by").style.margin = `${height}px 20px 0px 0px`;
