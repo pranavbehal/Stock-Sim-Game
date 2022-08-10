@@ -4,7 +4,7 @@ let portfolioValue = 25000;
 let AIportfolioValue = 25000;
 
 let MAIL = {
-  name: "National Mail Delivery",
+  name: "Mail Delivery",
   symbol: "MAIL",
   price: 100,
   shares: 0,

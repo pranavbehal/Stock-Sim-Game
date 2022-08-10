@@ -35,7 +35,7 @@
   .ai-stats {
     display: table-cell;
     vertical-align: middle;
-    width: 28%;
+    width: 30%;
   }
 
   .stocks {
@@ -44,7 +44,7 @@
     display: table;
     position: absolute;
     height: 99%;
-    width: 95%;
+    width: 100%;
   }
 
   .stock-entries {
@@ -58,9 +58,8 @@
   .fin,
   .bank,
   .fans {
-    width: 28%;
+    width: 33%;
     float: left;
-    padding: 10px;
   }
 
   #you-win,
