@@ -350,3 +350,10 @@ fansBtn.onclick = function () {
 span5.onclick = function () {
   fansModal.style.display = "none";
 };
+
+let mobileObjectiveModal = document.getElementById("mobile-objective-modal");
+let span6 = document.getElementsByClassName("close")[6];
+
+span6.onclick = function () {
+  mobileObjectiveModal.style.display = "none";
+};

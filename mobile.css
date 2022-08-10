@@ -27,19 +27,26 @@
     text-align: center;
     display: table;
     position: absolute;
-    width: 95%;
+    width: 90%;
   }
 
-  .objective,
+  .objective {
+    display: none;
+  }
+
   .my-stats,
   .ai-stats {
     display: table-cell;
     vertical-align: middle;
-    width: 30%;
+    width: 50%;
+  }
+
+  #mobile-objective-modal {
+    display: block;
   }
 
   .stocks {
-    top: 120px;
+    top: 100px;
     text-align: center;
     display: table;
     position: absolute;
